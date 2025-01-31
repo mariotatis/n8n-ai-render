@@ -34,14 +34,16 @@ services:
         value: 5678
       - key: N8N_LOG_LEVEL
         value: info
-      - key: GENERIC_TIMEZONE
-        value: Europe/Paris # change this to your timezone
       - key: TZ
-        value: Europe/Paris # change this to your timezone
+        value: America/New_York
       - key: N8N_DEFAULT_LOCALE
-        value: fr # change this to your locale
+        value: en
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
+      - key: N8N_WEBHOOK_URL
+        value: https://${RENDER_SERVICE_ID}.onrender.com
+      - key: WEBHOOK_URL
+        value: https://${RENDER_SERVICE_ID}.onrender.com
 
 databases:
   - name: n8nDB
