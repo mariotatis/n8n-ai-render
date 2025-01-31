@@ -41,9 +41,9 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
       - key: N8N_WEBHOOK_URL
-        value: https://${RENDER_SERVICE_ID}.onrender.com
+        value: https://n8n-6557.onrender.com
       - key: WEBHOOK_URL
-        value: https://${RENDER_SERVICE_ID}.onrender.com
+        value: https://n8n-6557.onrender.com
 
 databases:
   - name: n8nDB
